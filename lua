@@ -39,9 +39,9 @@ dupeButton.Size = UDim2.new(0, 200, 0, 50)
 dupeButton.Position = UDim2.new(0.5, -100, 0, 55) -- nasa baba ng title
 Instance.new("UICorner", dupeButton)
 
--- Footer Label
+-- Footer Label (updated text)
 local footer = Instance.new("TextLabel", frame)
-footer.Text = "FB: Màrk Lombendencio"
+footer.Text = "TIKTOK & YT : M SCRIPTS"
 footer.Font = Enum.Font.FredokaOne
 footer.TextSize = 12
 footer.TextColor3 = Color3.fromRGB(255, 255, 255)
