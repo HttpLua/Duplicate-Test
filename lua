@@ -10,8 +10,8 @@ screenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 -- Main Frame (black/grey style)
 local frame = Instance.new("Frame", screenGui)
-frame.Size = UDim2.new(0, 240, 0, 140)
-frame.Position = UDim2.new(0.5, -120, 0.5, -70)
+frame.Size = UDim2.new(0, 200, 0, 110) -- mas maliit na frame
+frame.Position = UDim2.new(0.5, -100, 0.5, -55)
 frame.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
 frame.Active = true
 frame.Draggable = true
@@ -22,32 +22,22 @@ Instance.new("UICorner", frame).CornerRadius = UDim.new(0, 12)
 local title = Instance.new("TextLabel", frame)
 title.Text = "SCRIPT X"
 title.Font = Enum.Font.FredokaOne
-title.TextSize = 28
+title.TextSize = 24 -- medyo maliit
 title.TextColor3 = Color3.fromRGB(255, 255, 255)
 title.BackgroundTransparency = 1
-title.Size = UDim2.new(1, 0, 0, 40)
-title.Position = UDim2.new(0, 0, 0, 8)
+title.Size = UDim2.new(1, 0, 0, 30)
+title.Position = UDim2.new(0, 0, 0, 6)
 
 -- Duplicate Button (nasa ilalim ng SCRIPT X)
 local dupeButton = Instance.new("TextButton", frame)
 dupeButton.Text = "Duplicate"
 dupeButton.Font = Enum.Font.FredokaOne
-dupeButton.TextSize = 28
+dupeButton.TextSize = 22
 dupeButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 dupeButton.BackgroundColor3 = Color3.fromRGB(0, 200, 0)
-dupeButton.Size = UDim2.new(0, 200, 0, 50)
-dupeButton.Position = UDim2.new(0.5, -100, 0, 55) -- nasa baba ng title
+dupeButton.Size = UDim2.new(0, 160, 0, 40) -- mas maliit na button
+dupeButton.Position = UDim2.new(0.5, -80, 0, 45) 
 Instance.new("UICorner", dupeButton)
-
--- Footer Label (updated text)
-local footer = Instance.new("TextLabel", frame)
-footer.Text = "TIKTOK & YT : M SCRIPTS"
-footer.Font = Enum.Font.FredokaOne
-footer.TextSize = 12
-footer.TextColor3 = Color3.fromRGB(255, 255, 255)
-footer.BackgroundTransparency = 1
-footer.Size = UDim2.new(1, 0, 0, 18)
-footer.Position = UDim2.new(0, 0, 1, -20)
 
 -- Get equipped pet
 local function getEquippedPetTool()
@@ -65,7 +55,7 @@ local function showErrorMessage(text)
 	local errorLabel = Instance.new("TextLabel", screenGui)
 	errorLabel.AnchorPoint = Vector2.new(0.5, 0.5)
 	errorLabel.Position = UDim2.new(0.5, 0, 0.45, 0)
-	errorLabel.Size = UDim2.new(0, 220, 0, 40)
+	errorLabel.Size = UDim2.new(0, 200, 0, 35)
 	errorLabel.BackgroundColor3 = Color3.fromRGB(200, 0, 0) -- Red
 	errorLabel.Text = text
 	errorLabel.Font = Enum.Font.FredokaOne
